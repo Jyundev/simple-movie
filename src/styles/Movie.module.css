@@ -1,0 +1,15 @@
+.movie_poster {
+    width: 200px;
+    height: 300px;
+}
+
+.horizontal_line {
+    border: none;
+    border-top: 5px solid rgb(202, 202, 202); /* 두께와 색상을 설정 */
+    margin: 20px 0px 20px 0px; /* 위아래 여백 설정 */
+}
+
+.overview_font {
+    font-family:'Courier New', Courier, monospace
+
+}

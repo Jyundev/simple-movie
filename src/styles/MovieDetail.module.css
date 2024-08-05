@@ -1,0 +1,22 @@
+.movie_container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.movie_poster {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.links a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: blue;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
