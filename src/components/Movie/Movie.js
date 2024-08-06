@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from '../styles/Movie.module.css';
+import styles from './Movie.module.css';
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 function Movie({ id, coverImg, title, overview, vote, releaseDate }) {
