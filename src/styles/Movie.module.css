@@ -1,15 +1,67 @@
-.movie_poster {
-    width: 200px;
-    height: 300px;
+.movie {
+    background-color: #1c1c1c;
+    color: #f0f0f0; 
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6); 
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    transition: transform 0.3s, box-shadow 0.3s; /* 호버 시 효과 */
 }
 
-.horizontal_line {
-    border: none;
-    border-top: 5px solid rgb(202, 202, 202); /* 두께와 색상을 설정 */
-    margin: 20px 0px 20px 0px; /* 위아래 여백 설정 */
+.movie:hover {
+    transform: scale(1.02); /* 약간의 확대 효과 */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.8); /* 호버 시 그림자 강화 */
 }
 
-.overview_font {
-    font-family:'Courier New', Courier, monospace
+.movie__imgContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+}
 
+.movie__img {
+    border-radius: 8px;
+    max-width: 150px;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+}
+
+.movie__date {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #b3b3b3;
+}
+
+.movie__content {
+    flex: 1;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 0 0 10px;
+    color: #e50914; 
+}
+
+h2 a {
+    text-decoration: none;
+    color: inherit; /* 링크 색상을 부모 색상으로 상속 */
+    transition: color 0.3s;
+}
+
+h2 a:hover {
+    color: #b3b3b3; /* 링크 호버 색상 */
+}
+
+p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin: 0 0 10px;
+}
+
+.movie__vote {
+    font-weight: bold;
+    color: #e5e5e5;
 }
